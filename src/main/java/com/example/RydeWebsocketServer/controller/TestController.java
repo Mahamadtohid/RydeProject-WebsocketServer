@@ -27,11 +27,11 @@ public class TestController {
         return new TestResponse("Received");
     }
 
-    @SendTo("/topic/sheduled")
-    @Scheduled(fixedDelay = 2000)
-    public void periodicMsg(TestRequest message){
-        messageSender.convertAndSend("/topic/sheduled" , "periodic message sent " + System.currentTimeMillis());
-    }
+//    @SendTo("/topic/sheduled")
+////    @Scheduled(fixedDelay = 2000)
+//    public void periodicMsg(TestRequest message){
+//        messageSender.convertAndSend("/topic/sheduled" , "periodic message sent " + System.currentTimeMillis());
+//    }
 
 
 }
